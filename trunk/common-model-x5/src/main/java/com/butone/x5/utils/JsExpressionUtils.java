@@ -99,6 +99,7 @@ public class JsExpressionUtils {
 		if (funcs != null) {
 
 			// <funcs>--><item> 元素集合
+			@SuppressWarnings("unchecked")
 			Iterator<Element> i = funcs.selectNodes("item").iterator();
 
 			while (i.hasNext()) {
@@ -113,6 +114,7 @@ public class JsExpressionUtils {
 				result.add(catalog);
 
 				// <funcs>--><item>--><item> 元素集合
+				@SuppressWarnings("unchecked")
 				Iterator<Element> j = catalogNode.selectNodes("item")
 						.iterator();
 
@@ -149,6 +151,7 @@ public class JsExpressionUtils {
 		if (funcs != null) {
 
 			// <operators>--><item> 元素集合
+			@SuppressWarnings("unchecked")
 			Iterator<Element> i = funcs.selectNodes("item").iterator();
 
 			while (i.hasNext()) {
@@ -163,6 +166,7 @@ public class JsExpressionUtils {
 				result.add(catalog);
 
 				// <operators>--><item>--><item> 元素集合
+				@SuppressWarnings("unchecked")
 				Iterator<Element> j = catalogNode.selectNodes("item")
 						.iterator();
 

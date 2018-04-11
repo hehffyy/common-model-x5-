@@ -8,7 +8,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
-import javax.xml.bind.annotation.XmlElements;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
@@ -23,7 +22,6 @@ public class BusinessActionConfig {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
 
 	@XmlElementWrapper(name = "subBizs")
 	@XmlElement(name = "biz")

@@ -16,13 +16,9 @@ import com.butone.xml.CDATAXmlAdapter;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement
-@XmlType(name = "materialGroup", propOrder = { "id", "name", "condition", "subGroups", "materials"})
-public class MaterialGroup  {
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+@XmlType(name = "materialGroup", propOrder = { "id", "name", "condition",
+		"subGroups", "materials" })
+public class MaterialGroup {
 
 	@XmlAttribute
 	private String id;
@@ -38,12 +34,12 @@ public class MaterialGroup  {
 	@XmlJavaTypeAdapter(CDATAXmlAdapter.class)
 	private String condition;
 
-	@XmlElementWrapper(name="subGroups")
-	@XmlElement(name ="materialGroup")
+	@XmlElementWrapper(name = "subGroups")
+	@XmlElement(name = "materialGroup")
 	private ArrayList<MaterialGroup> subGroups;
 
-	@XmlElementWrapper(name="materials")
-	@XmlElement(name ="material")
+	@XmlElementWrapper(name = "materials")
+	@XmlElement(name = "material")
 	private ArrayList<BizMaterial> materials;
 
 	public String getName() {
@@ -103,7 +99,5 @@ public class MaterialGroup  {
 	public void setOrder(Integer order) {
 		this.order = order;
 	}
-
-	 
 
 }
